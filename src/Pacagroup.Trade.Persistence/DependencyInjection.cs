@@ -18,7 +18,7 @@ namespace Pacagroup.Trade.Persistence
             services.AddScoped<AuditableEntitySaveChangesInterceptor>();
             services.AddDbContext<AplicationDbContext>(options =>
                 options.UseSqlServer(
-                    configuration.GetConnectionString("NorthwindConnection"),
+                    configuration.GetConnectionString("TradingConnection"),
                     b => b.MigrationsAssembly(typeof(AplicationDbContext).Assembly.FullName)
                 )
             );

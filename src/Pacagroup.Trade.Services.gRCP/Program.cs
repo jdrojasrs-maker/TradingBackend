@@ -1,9 +1,11 @@
+using Pacagroup.Trade.Persistence;
 using Pacagroup.Trade.Services.gRCP.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddGrpc();
+builder.Services.AddPersistenceServices(builder.Configuration);
 
 var app = builder.Build();
 

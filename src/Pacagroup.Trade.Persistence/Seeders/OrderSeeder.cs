@@ -14,7 +14,7 @@ namespace Pacagroup.Trade.Persistence.Seeders
                 Id = 1,
                 Symbol = "META",
                 Side = Domain.Enums.OrderSide.BUY,
-                TransactTime = DateTime.UtcNow.AddDays(-10),
+                TransactTime = new DateTime(2025, 10, 21, 12, 0, 0, DateTimeKind.Utc),
                 Quantity = 1000,
                 Type = Domain.Enums.OrderType.LIMIT,
                 Price = 522.99M
@@ -24,7 +24,7 @@ namespace Pacagroup.Trade.Persistence.Seeders
                 Id = 2,
                 Symbol = "AAPL",
                 Side = Domain.Enums.OrderSide.BUY,
-                TransactTime = DateTime.UtcNow.AddDays(-8),
+                TransactTime = new DateTime(2025, 10, 23, 12, 0, 0, DateTimeKind.Utc),
                 Quantity = 50,
                 Type = Domain.Enums.OrderType.LIMIT,
                 Price = 145.50M
@@ -34,7 +34,7 @@ namespace Pacagroup.Trade.Persistence.Seeders
                 Id = 3,
                 Symbol = "TSLA",
                 Side = Domain.Enums.OrderSide.SELL,
-                TransactTime = DateTime.UtcNow.AddDays(-5),
+                TransactTime = new DateTime(2025, 10, 26, 12, 0, 0, DateTimeKind.Utc),
                 Quantity = 30,
                 Type = Domain.Enums.OrderType.MARKET,
                 Price = 0
@@ -44,7 +44,7 @@ namespace Pacagroup.Trade.Persistence.Seeders
                 Id = 4,
                 Symbol = "AMZN",
                 Side = Domain.Enums.OrderSide.BUY,
-                TransactTime = DateTime.UtcNow.AddDays(-3),
+                TransactTime = new DateTime(2025, 10, 28, 12, 0, 0, DateTimeKind.Utc),
                 Quantity = 200,
                 Type = Domain.Enums.OrderType.MARKET,
                 Price = 0
