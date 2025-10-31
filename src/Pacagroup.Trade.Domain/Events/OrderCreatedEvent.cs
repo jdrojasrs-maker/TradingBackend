@@ -17,5 +17,7 @@ namespace Pacagroup.Trade.Domain.Events
         public int Quantity { get; set; }
         public OrderType Type { get; set; }
         public decimal Price { get; set; }
+        public string Currency { get; set; }
+        public string? Text { get; set; }
     }
 }

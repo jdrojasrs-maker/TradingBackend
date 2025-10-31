@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Pacagroup.Trade.Persistence.Contexts;
 
@@ -11,9 +12,11 @@ using Pacagroup.Trade.Persistence.Contexts;
 namespace Pacagroup.Trade.Persistence.Migrations
 {
     [DbContext(typeof(AplicationDbContext))]
-    partial class AplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251031122035_AlterOrderScheme")]
+    partial class AlterOrderScheme
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -86,7 +89,7 @@ namespace Pacagroup.Trade.Persistence.Migrations
                         new
                         {
                             Id = 1,
-                            Created = new DateTime(2025, 10, 31, 7, 22, 0, 0, DateTimeKind.Local),
+                            Created = new DateTime(2025, 10, 31, 12, 20, 34, 788, DateTimeKind.Utc).AddTicks(6211),
                             CreatedBy = "system",
                             Currency = "USD",
                             Price = 522.99m,
@@ -100,7 +103,7 @@ namespace Pacagroup.Trade.Persistence.Migrations
                         new
                         {
                             Id = 2,
-                            Created = new DateTime(2025, 10, 31, 7, 22, 0, 0, DateTimeKind.Local),
+                            Created = new DateTime(2025, 10, 31, 12, 20, 34, 788, DateTimeKind.Utc).AddTicks(6409),
                             CreatedBy = "system",
                             Currency = "USD",
                             Price = 145.50m,
@@ -114,7 +117,7 @@ namespace Pacagroup.Trade.Persistence.Migrations
                         new
                         {
                             Id = 3,
-                            Created = new DateTime(2025, 10, 31, 7, 22, 0, 0, DateTimeKind.Local),
+                            Created = new DateTime(2025, 10, 31, 12, 20, 34, 788, DateTimeKind.Utc).AddTicks(6411),
                             CreatedBy = "system",
                             Currency = "USD",
                             Price = 0m,
@@ -128,7 +131,7 @@ namespace Pacagroup.Trade.Persistence.Migrations
                         new
                         {
                             Id = 4,
-                            Created = new DateTime(2025, 10, 31, 7, 22, 0, 0, DateTimeKind.Local),
+                            Created = new DateTime(2025, 10, 31, 12, 20, 34, 788, DateTimeKind.Utc).AddTicks(6413),
                             CreatedBy = "system",
                             Currency = "USD",
                             Price = 0m,

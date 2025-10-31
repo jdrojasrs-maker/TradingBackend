@@ -17,7 +17,11 @@ namespace Pacagroup.Trade.Persistence.Seeders
                 TransactTime = new DateTime(2025, 10, 21, 12, 0, 0, DateTimeKind.Utc),
                 Quantity = 1000,
                 Type = Domain.Enums.OrderType.LIMIT,
-                Price = 522.99M
+                Price = 522.99M,
+                Currency = "USD",
+                Text = "Initial order for META stocks",
+                Created = new DateTime(2025, 10, 31, 7, 22, 0, DateTimeKind.Local),
+                CreatedBy = "system"
             },
             new Order
             {
@@ -27,7 +31,11 @@ namespace Pacagroup.Trade.Persistence.Seeders
                 TransactTime = new DateTime(2025, 10, 23, 12, 0, 0, DateTimeKind.Utc),
                 Quantity = 50,
                 Type = Domain.Enums.OrderType.LIMIT,
-                Price = 145.50M
+                Price = 145.50M,
+                Currency = "USD",
+                Text = "Initial order for AAPL stocks",
+                Created = new DateTime(2025, 10, 31, 7, 22, 0, DateTimeKind.Local),
+                CreatedBy = "system"
             },
             new Order
             {
@@ -37,7 +45,11 @@ namespace Pacagroup.Trade.Persistence.Seeders
                 TransactTime = new DateTime(2025, 10, 26, 12, 0, 0, DateTimeKind.Utc),
                 Quantity = 30,
                 Type = Domain.Enums.OrderType.MARKET,
-                Price = 0
+                Price = 0,
+                Currency = "USD",
+                Text = "Initial order for TSLA stocks",
+                Created = new DateTime(2025, 10, 31, 7, 22, 0, DateTimeKind.Local),
+                CreatedBy = "system"
             },
             new Order
             {
@@ -47,7 +59,11 @@ namespace Pacagroup.Trade.Persistence.Seeders
                 TransactTime = new DateTime(2025, 10, 28, 12, 0, 0, DateTimeKind.Utc),
                 Quantity = 200,
                 Type = Domain.Enums.OrderType.MARKET,
-                Price = 0
+                Price = 0,
+                Currency = "USD",
+                Text = "Initial order for AMZN stocks",
+                Created = new DateTime(2025, 10, 31, 7, 22, 0, DateTimeKind.Local),
+                CreatedBy = "system"
             });
         }
     }
