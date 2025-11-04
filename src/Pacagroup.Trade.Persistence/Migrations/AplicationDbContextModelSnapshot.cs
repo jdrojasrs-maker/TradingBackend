@@ -10,7 +10,7 @@ using Pacagroup.Trade.Persistence.Contexts;
 
 namespace Pacagroup.Trade.Persistence.Migrations
 {
-    [DbContext(typeof(AplicationDbContext))]
+    [DbContext(typeof(ApplicationDbContext))]
     partial class AplicationDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

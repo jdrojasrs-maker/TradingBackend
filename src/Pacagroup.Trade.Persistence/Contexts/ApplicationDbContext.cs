@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Pacagroup.Trade.Domain.Entities;
 using Pacagroup.Trade.Persistence.Interceptors;
+using Pacagroup.Trade.Application.Interfaces.Persistence;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,12 +11,12 @@ using System.Threading.Tasks;
 
 namespace Pacagroup.Trade.Persistence.Contexts
 {
-    public class AplicationDbContext : DbContext
+    public class ApplicationDbContext : DbContext, IApplicationDbContext
     {
         public readonly AuditableEntitySaveChangesInterceptor _auditableEntitySaveChangesInterceptor;
 
-        public AplicationDbContext(
-            DbContextOptions<AplicationDbContext> options,
+        public ApplicationDbContext(
+            DbContextOptions<ApplicationDbContext> options,
             AuditableEntitySaveChangesInterceptor auditableEntitySaveChangesInterceptor
         ) : base(options)
         {

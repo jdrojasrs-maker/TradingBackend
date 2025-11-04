@@ -11,7 +11,7 @@ using Pacagroup.Trade.Persistence.Contexts;
 
 namespace Pacagroup.Trade.Persistence.Migrations
 {
-    [DbContext(typeof(AplicationDbContext))]
+    [DbContext(typeof(ApplicationDbContext))]
     [Migration("20251031122035_AlterOrderScheme")]
     partial class AlterOrderScheme
     {
